@@ -1,0 +1,12 @@
+Theme: Text Classification and Sentiment Analysis
+
+Problem: The current Syrian refugee crisis is garnering significant social media attention, both positive and negative, which can have an impact on politics and policy implementation.
+
+Research Question: How does the sentiment regarding the welcoming of Syrian refugees vary country to country?
+
+Data:  Apache Flume will be used to stream live twitter feeds into HDFS at different times- the collection of tweets that are stored will act as the working data sets.
+
+Techniques/Tools:  The Apache Hadoop framework will be used throughout this project. Using an API Key and Access Token generated from 
+https://apps.twitter.com , live twitter feed data will be streamed into HDFS using Apache Flume. 
+Apache Hive will then be used to structure the data into a tabular format, geolocation data of the tweets included where possible (if user has geo enabled app). HQL queries will be used to classify the tweets as negative or positive and then the resulting HIVE table will then be exported to Microsoft Excel 2013, where tweets will be grouped and classified based on geolocation and sentiment (positive or negative) in PowerPivot, with data visualizations being created with PowerView. 
+
